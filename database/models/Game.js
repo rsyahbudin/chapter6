@@ -15,6 +15,12 @@ function GameModel(sequelize) {
         description: {
             type: DataTypes.STRING
         },
+        score:  {
+            type: DataTypes.INTEGER,
+        },
+        max_player:  {
+            type: DataTypes.INTEGER,
+        },
     }, {
         sequelize,
         tableName: 'games',
